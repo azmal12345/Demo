@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+
+$red : red;
+$green : green;
+$orange : orange;
+$yellow : yellow;
+$blue : blue;
+$purple : purple;
+$lime : lime;
+$skyblue : skyblue;
+$black : rgb(0, 0, 0);
+$white : rgb(255, 255, 255);
+$pink : #ff0066;
+$boxShadow : 5px 8px 8px -6px rgba(0,0,0,0.5);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Serif', serif;
+    background-color: rgba(241, 248, 249, 0.612);
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/fixedBackground.png.png");
+
+}
+
+button, i, img{
+    cursor: pointer;
+}
+
+[type="text"]{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 15vh;
+    background-color: rgb(255,255,255);
+    box-shadow: 5px 8px 8px -6px rgba(0,0,0,0.5);
+    z-index: 55;
+}
+
+.navbar_list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+
+    .barend h1{
+        font-size: 2.50rem;
+        font-weight: 700;
+        margin-left: 50px;
+    }
+    // end 
+
+
+    .nav_call_know{
+        width: 150px;
+        padding: 10px;
+        background: linear-gradient(to left,#A54E85,#692B69);
+        text-align: center;
+        color: rgb(255,255,255);
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+
+        a{
+            text-decoration: none;
+            color: rgb(255,255,255);
+        }
+
+        h2{
+            font-size: 1.50rem;
+        }
+
+        &:hover{
+            background: linear-gradient(to right,#A54E85,#692B69);
+        }
+    }
+    // end 
+
+    .number_call{
+        a{
+            text-decoration: none;
+            color: rgb(165, 78, 133);
+            font-size: 1.50rem;
+            font-weight: 500;
+        }
+    }
+    // end 
+    .bars{
+        width: 50px;
+        height: 50px;
+
+        i{
+            margin-top: 5px;
+            font-size: 2.50rem;
+            color: rgb(163, 77, 132);
+        }
+    }
+}
+
+// ************************* form id ***************************
+.form_flex{
+    width: 40%;
+    margin: 50px auto;
+    box-shadow: 0px 11px 12px 1px rgba(0, 0, 0,0.5);
+    padding: 50px 10px;
+    background-color: rgb(255,255,255);
+}
+
+.flex_form{
+    h1{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    label{
+        margin: 21.50px 0;
+        i{
+            font-size: 1.50rem;
+            font-weight: bold;
+        }
+
+        span{
+            margin: 10px;
+        }
+    }
+
+    input{
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(0,0,0);
+    }
+
+    button{
+        width: 50%;
+        margin: 50px auto 10px auto;
+        padding: 15px 50px;
+        border: none;
+        outline: none;
+        background: linear-gradient(to left, #692B69, #2b122b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        word-spacing: 5px;
+        color: rgb(255,255,255);
+    }
+
+    h5{
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold;
+
+        a{
+            text-decoration: none;
+            color: rgb(0,0,0);
+        }
+    }
+
+    p{
+
+        a{
+            font-size: 1rem;
+            color: gray;
+            text-decoration: none;
+        }
+    }
+}
+
+// end rotate 
+.rotate{
+    width: 100%;
+    position: relative;
+
+    h1{
+        position: fixed;
+        top: 50%;
+        left: -5%;
+        z-index: 2;
+        transform: rotate(-270deg);
+        background-color: #843A75;
+        font-size: 1.30rem;
+        color: rgb(255,255,255);
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.fixedIcon{
+    position: fixed;
+    top: 40%;
+    right: -0.5%;
+    float: right;
+    z-index: 2;
+    display: grid;
+
+    i{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #843A75;
+        color: rgb(255,255,255);
+        font-size: 1rem;
+        line-height: 50px;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+    .iconList{
+        position: relative;
+        display: none;
+
+        i{
+            position: fixed;
+            right: 0;
+            bottom: 85px;
+            width: 35px;
+            height: 35px;
+            background-color: #843A75;
+            border-radius: 5px;
+            line-height: 35px;
+            text-align: center;
+            color: rgb(255,255,255);
+            z-index: 2;
+        }
+    }
+
+.call_now_link{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #843A75;
+    background-color: rgb(255,255,255);
+    z-index: 2;
+    display: none;
+
+    p{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .call_icon{
+         margin-top: -15px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+
+        a{
+            color: #843A75;
+            text-decoration: none;
+        }
+
+        button{
+            padding: 10px 30px;
+            border: none;
+            outline: none;
+            background:linear-gradient(to right,#2e1c27,#692B69);
+            color: rgb(255,255,255);
+            border-radius: 5px;
+
+            a{
+                text-decoration: none;
+                color: rgb(255,255,255);
+            }
+        }
+    }
+}
+
+// navbar button content show list and toggle 
+.toggle_button.slider{
+        left: 0;
+        transition: 0.5s ease;
+    }
+    
+.toggle_button{
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #97467E;
+    color: rgb(255,255,255);
+    z-index: 5;
+    text-align: center;
+    transition: 0.5s ease;
+
+    ul{
+        display: grid;
+
+        li{
+            width: 100%;
+            padding: 15px 0;
+            list-style: none;
+            margin: 24.50px 0;
+            transition: 0.5s ease;
+
+            &:hover{
+                background-color: rgb(151, 70, 126);
+               box-shadow:  5px 8px 8px -6px rgba(0,0,0,0.5);
+               transition: 0.5s ease;
+            }
+
+            a{
+            text-decoration: none;
+            color: rgb(255,255,255);
+            font-weight: bold;
+            transition: 0.5s ease;
+
+            &:hover{
+                margin-left: 15px;
+                transition: 0.5s ease;
+            }
+            }
+
+            i{
+                font-size: 25px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+// pop 
+.pop{
+    width: 100%;
+    position: relative;
+}
+
+.pop_text{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    z-index: 9999;
+
+    .iconTimes{
+        float: right;
+        clear: both;
+        position: relative;
+        cursor: pointer;
+        z-index: 9999999;
+
+        i{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(255,255,255);
+            position: relative;
+            top: 45px;
+            right: 35px;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 450px;
+    }
+}
+
+.customer_care_text{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 99999;
+
+    img{
+        width: 85px;
+        height: 85px;
+        border: 2px solid rgb(255,255,255);
+        border-radius: 100%;
+    }
+
+    h1{
+        margin: 350px 0 25px 0;
+        font-weight: bold;
+        font-size: 1.50rem;
+        color: $white;
+    }
+
+    a{
+        font-size: 1.30rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: $white;
+
+        i{
+            font-size: 1.20rem;
+            font-weight: bold;
+            color: $white;
+        }
+    }
+
+    h2{
+        margin: 25px 0;
+        font-size: 1.30rem;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ff0066;
+    }
+
+    .popText{
+        color: rgb(255,255,255);
+    }
+}

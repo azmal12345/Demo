@@ -1,0 +1,125 @@
+/* 1050 */
+@media screen and (max-width: 1050px){
+  .form_flex{
+    width: 60%;
+}
+
+.welCome h1 {
+  text-align: center;
+}
+
+}
+/* 810 */
+@media screen and (max-width: 810px){
+    /* first section  */
+    .navbar_list .number_call {
+        display: none;
+    }
+    .navbar_list .barend h1 {
+     margin-left: 0px;
+   }
+}
+/* 768 */
+@media screen and (max-width: 768px){
+    .navbar_list .nav_call_know {
+    display: block;
+}
+
+/* ul  */
+ .orderList::before {
+  display: none;
+  }
+
+  .rotate{
+    display: none;
+  }
+
+}
+/* 610 */
+@media screen and (max-width: 610px){
+    .navbar_list {
+    padding: 15px 5px;
+}
+
+.navbar_list .barend h1 {
+  font-size: 2rem;
+}
+
+.navbar_list .nav_call_know {
+  width: 150px;
+  padding: 10px;
+}
+
+/* ********************* form three ********************** */
+.form_part3_child {
+    justify-content: center;
+ }
+
+ .heading_text h1 {
+   text-align: center;
+}
+
+.heading_text h1::before {
+  top: 75px;
+  left: 30%;
+}
+
+.heading{
+  margin-top: -25px;
+  text-align: center;
+}
+
+.heading::before {
+  top: 75px;
+  left: 24.50%;
+}
+
+.social_iconCotainerList ul li a {
+  font-size: 12px;
+}
+
+.spacel_details {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.spacel_details::before {
+  margin-top: 10px;
+  left: 35%;
+}
+
+.iconList{
+  display: block;
+}
+
+.call_now_link {
+  display: block;
+}
+
+.call_now_link .call_icon {
+  padding: 10px 10px;
+}
+
+.call_now_link .call_icon button {
+  padding: 10px 21.50px;
+}
+ /* end  */
+
+ .formBackground {
+  padding: 25px 5px;
+}
+
+.form_flex{
+    width: 95%;
+}
+
+.flex_form button{
+  width: 90%;
+}
+
+.welCome h1 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+}
